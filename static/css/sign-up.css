@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+
+    
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    width:370px;
+    height: 600px;
+    
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(221, 215, 215, 0.5);
+    box-shadow: inset -5px -5px rgba(26, 5, 2, 0.473);
+    border-radius: 28px;
+}
+.form h1{
+    color: aliceblue;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    margin: 50px;
+    
+
+
+}
+
+.box{
+    padding:12px;
+    margin: 5px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 25px;
+    border-radius: 25px;
+    /* background-color: rgba(148, 226, 231, 0.295); */
+    background-color: rgba(134, 206, 216, 295);
+    /* background-color:rgba(148, 226, 231, 295); */
+    box-shadow: inset -3px -3px rgba(5, 81, 180, 0.5);
+    font-size: 1rem;
+    color:white;
+    /* background: transparent; */
+    
+}
+
+#submit{
+    padding: 10px 20px;
+    margin-top: 50px;
+    width: 30%;
+    /* background-color: rgba(148, 226, 231, 0.295); */
+    background-color: rgba(134, 206, 216, 295);
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    border: none; 
+    outline: none;
+    border-radius: 25px;
+    color: rgb(2, 2, 2);
+    font-size: 1rem;
+    margin-right: 124px;
+
+}
+
+#cancel{
+    padding: 10px 20px;
+    margin-top: -44px;
+    width: 30%;
+    /* background-color: rgba(148, 226, 231, 0.295); */
+    background-color: rgba(134, 206, 216, 295);
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    border: none; 
+    outline: none;
+    border-radius: 25px;
+    color: rgb(2, 2, 2);
+    font-size: 1rem;
+    margin-right: -124px;
+
+}
+
+#cancel a{
+
+    text-decoration: none;
+    color: red;
+    
+}
+.remember-forgot{
+    display: flex;
+    align-self: center;
+    gap: 76px;
+    margin: 12px 8px;
+    color: black;
+
+    
+}
+.remember-forgot a{
+    text-decoration: none;
+    color:white;
+}
+.register{
+    display: flex;
+    align-self: center;
+    color:black
+    
+
+}
+.register a{
+    text-decoration: none;
+    color:white
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: rgba(225,225,225,0.1);
+    color: rgb(5, 5, 5);
+
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+

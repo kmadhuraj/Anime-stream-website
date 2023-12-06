@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static "/css/header.css" %}">
+    <link  href="{% static "/js/headresp.js" %}">
+    
+    
+</head>
+<body>
+    
+    <header class="head head-height">
+        <div class="nav v-class-resp">
+          <ul>
+            <li ><a href="{%url 'index'%}">HOME</a></li>
+            {% comment %} <li ><a href="{%url 'mylist'%}">MY LIST</a></li> {% endcomment %}
+            {% comment %} <li ><a href="">FAVOURITS</a></li> {% endcomment %}
+            <li ><a href="">GENRE</a></li>
+            <li ><a href="">MOVIES</a></li>
+            {% comment %} <li><a href="">ABOUT US</a></li> {% endcomment %}
+            {% if user.is_authenticated%}
+            <li class="right-side-li"><a href="{% url 'logout' %}">LOG OUT</a></li>
+            <h6 class="text-white ml-72 mt-10"><i class="fa-regular fa-user" style="color: #ffffff;"></i> {{request.user}}</h6> 
+            
+
+            {% else %}
+
+            <li class="right-side-li"><a href="{% url 'signup'%}">SIGN UP</a></li>
+            <li class="right-side-li"><a href="{% url 'login'%}">LOGIN</a></li>
+          
+             
+            {% endif %}
+
+            
+          </ul>
+        </div>
+
+        <div class="right-side-bar v-class-resp">
+         <input class="input" type="search" name="search" placeholder="Search Here">
+         <button id="search-btn">Search</button>
+        </div>
+
+
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+
+      </header>
+
+      
+    
+</body>
+</html>
+
+
+
+

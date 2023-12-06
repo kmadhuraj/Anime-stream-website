@@ -1,0 +1,26 @@
+
+body{
+    font-size: 13px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: black;
+    color: white;
+    
+    
+    
+}
+.foot li{
+    list-style-type: none;
+    margin: 10px;
+    float: left;
+   
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    
+    padding:20px;
+}

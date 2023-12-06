@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch video</title>
+    <link rel="stylesheet" href="{% static "/css/watch.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <span></span>
+</head>
+<body>
+    {% include "header.html" %}
+   
+    <div class="main-container">
+        <div class="episode-container ">
+            <h6>List of episodes</h6>
+            <div class="i-fa"><input class="search-ep-cls" type="search" name="search-ep" placeholder="Find number">  <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #ffffff;" ></i>    </div>
+            
+            <span><a class="bld" href=""><b>1</b> Ryumen sukuna</a></span>
+            <span><a class="bld" href=""><b>2</b> For myself</a></span>
+            <span><a class="bld" href=""><b>3</b> Girl of steel</a></span>
+            <span><a class="bld" href=""><b>4</b> Curse womb must die</a></span>
+            <span><a class="bld" href=""><b>5</b> Curse womb must die 2</a></span>
+            <span><a class="bld" href=""><b>6</b> After rain </a></span>
+            <span><a class="bld" href=""><b>7</b> Assault</a></span>
+            <span><a class="bld" href=""><b>8</b> Borebom</a></span>
+            <span><a class="bld" href=""><b>9</b> Small fry and reverse retribution</a></span>
+            <span><a class="bld" href=""><b>10</b> Idle transfiguration</a></span>
+
+        </div>
+        
+        <div class="video">
+            <div class="play-container">
+
+                <video class="play-video" controls>
+                    <source src=" {{watch_video.Video.url}}" type="video/mp4">
+                    
+                    
+                  </video> 
+
+
+            </div>
+
+            <div class="play-controls">
+                <button id="flt-lft" class="control-btn">Auto-play Off    </button >
+                <button class="control-btn">Auto-play On</button>
+                <button id="flt-right" class="control-btn-lft">Next  <i class="fa-solid fa-forward" style="color: #ffffff;"></i>  </button>
+                <button class="control-btn-lft">   <i class="fa-solid fa-backward" style="color: #ffffff;"></i>    Previous    </button>
+
+                <div class="play-status">
+                    <p>Your are watching Episode {{vid.id}}</p>
+
+                    <p>If current server doesn't work please refresh the page</p>
+
+
+                </div>
+
+            </div>    
+        </div>    
+    </div>
+
+    <div class="video-desc">
+        {% for vid in video %}
+        <img class="sub-img " src="{{vid.image.url}}" width="100px" height="160px" alt="img1">
+        
+        <div class="text">
+            <h6>{{vid.title}}</h6>
+        <ul class="ul-flt">
+            <li class="li-flt">{{vid.type}}</li>
+            <li class="li-flt">{{vid.duration}}</li>
+        </ul>
+        <p>{{vid.desc}}</p>
+        
+
+        <ul class="ul-lft">
+            <li>Type:{{vid.type}}</li>
+            <li>Release date:{{vid.release_date}}</li>
+            <li>Genre:{{vid.genre}}</li>
+        </ul>
+
+        <ul class="ul-rht">
+            <li>Country:{{vid.country}}</li>
+            <li>Score:{{vid.score}}</li>
+            <li>Duration:{{vid.duration}}</li>
+            <li>Episodes:{{vid.episodes}}</li>
+
+        </ul>
+
+        </div>
+        
+            
+        
+    {% endfor %}
+    </div>
+    
+
+    {% include "footer.html" %}
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

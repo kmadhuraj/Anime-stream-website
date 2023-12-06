@@ -1,0 +1,172 @@
+*{
+   margin: 0;
+   padding: 0;
+
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction:row;
+}
+
+.episode-container{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 754px;
+    background-color:black;
+}
+.episode-container h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+
+}
+.episode-container .search-ep-cls{
+    width: 107px;
+    height: 23px;
+  
+} 
+.episode-container .i-fa{
+    /* width: 107px; */
+    left: 160px;
+    position: relative;
+    top: -30px;
+
+}
+
+.episode-container span{
+    /* width: fit-content; */
+    /* height: 10px; */
+    /* background-color: aliceblue; */
+
+    margin: 20px;
+
+    /* height: 10px;
+    width: 20px;
+    border: 1px solid white;
+    background-color: aliceblue; */
+    /* box-shadow:inset whitesmoke ; */
+
+}
+
+.episode-container span a{
+    text-decoration:none;
+    color: white;
+}
+
+.bld b {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.video{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.play-container{
+
+    
+    width:1000px;
+    height: 500px;
+    background-color: #000000;
+}
+.play-video{
+    width:auto;
+    height: 500px;
+}
+
+
+
+
+.play-controls{
+    width: 1000px;
+    height: 254px;
+
+    background-color: #141617;
+
+}
+.play-controls button{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    
+}
+.play-controls .control-btn{
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.flt-right{
+    margin-left: 40px;
+
+}
+.play-controls .control-btn-lft{
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+#flt-right{
+    margin-right: 40px;
+}
+
+
+.play-status{
+    
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.video-desc{
+    width: auto;
+    height: 600px;
+    background-color: #15130db8;
+    color: white;
+    /* text-indent: 20%; */
+
+}
+/* .video-desc .sub-img{
+    width: 100px;
+    height: 160px;
+    margin-left: 10px;
+} */
+
+.video-desc ul{
+    list-style-type: none;
+}
+
+.ul-flt{
+    padding-left: 0px;
+
+}
+.ul-lft{
+    float: left;
+    padding-left: 0px;
+    /* margin-left: 30px; */
+
+}
+
+.ul-rht{
+    /* color: rgb(139, 230, 233); */
+    margin-left: 650px
+
+
+}
+
+
+.sub-img{
+    float: left;
+}
+.video-desc p , h6, li{
+   
+    margin-left: 120px;
+}

@@ -1,0 +1,189 @@
+ *{
+    margin: 0;
+    padding: 0;
+    
+    /* background-color: rgb(73, 72, 71); */
+}
+
+
+
+.img{
+    width: 1500px;
+    height: 700px;
+    /* margin-top: 10px; */
+}
+ 
+.sub-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container{
+    display: flex;
+    
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+}
+.sub-container-2{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.h4{
+    margin-left: 20px;
+}
+
+.sub-img:hover{
+    transform: scale(1.1 );
+    cursor: pointer;
+    transition: all 0.6s;
+    
+}
+
+
+.watch-now-btn{
+    width: 124px;
+    height: 36px;
+    border: none;
+   
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+
+}
+
+
+@media screen and (max-width: 475px){
+     
+    .img {
+        width: 100%; 
+        height: auto; 
+    }
+  
+
+    .sub-main{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+
+    }
+
+    .sub-container{
+        display: flex;
+        flex-wrap:wrap;
+        
+
+    }
+    .sub-container-2{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .img {
+        width: 100%; 
+        height: auto; 
+    }
+
+
+    .sub-main{
+        display: flex;
+        flex-direction:column;
+        
+
+    }
+
+    .sub-container{
+        display: flex;
+        flex-wrap:wrap;
+        
+        
+
+    }
+    .sub-container-2{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px){
+    
+    .img {
+        width: 100%; 
+        height: auto; 
+    }
+
+
+    .sub-main{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+
+    }
+
+    .sub-container{
+        display: flex;
+        flex-wrap:wrap;
+        
+
+    }
+    .sub-container-2{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    
+    .img {
+        width: 100%; 
+        height: auto; 
+    }
+    .carousel-caption{
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-main{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+
+    }
+
+    .sub-container{
+        display: flex;
+        flex-wrap:wrap;
+        
+
+    }
+    .sub-container-2{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
